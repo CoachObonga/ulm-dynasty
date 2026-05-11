@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ULM Warhawks Dynasty — CFB 26</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+  HEADER & NAV
+═══════════════════════════════════════ -->
+<header id="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="#" onclick="showPage('home');return false;">
+      <div class="logo-emblem">ULM</div>
+      <div class="logo-text">
+        <span class="logo-title">Warhawks Dynasty</span>
+        <span class="logo-sub">CFB 26 · Head Coach Barack Obonga</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <ul class="nav-list">
+        <li><a data-page="home" href="#home">Home</a></li>
+        <li><a data-page="seasons" href="#seasons">Seasons</a></li>
+        <li><a data-page="rosters" href="#rosters">Rosters &amp; Players</a></li>
+        <li><a data-page="stats" href="#stats">Stats Database</a></li>
+        <li><a data-page="draft" href="#draft">NFL Draft</a></li>
+        <li><a data-page="awards" href="#awards">Awards &amp; Honors</a></li>
+        <li><a data-page="hof" href="#hof">Hall of Fame</a></li>
+        <li><a data-page="recruiting" href="#recruiting">Recruiting</a></li>
+        <li><a data-page="coaching" href="#coaching">Coaching Staff</a></li>
+        <li><a data-page="conference" href="#conference">Conference History</a></li>
+        <li><a data-page="national" href="#national">National Context</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: HOME
+═══════════════════════════════════════ -->
+<main id="home" class="page active">
+  <div class="page-header">
+    <div class="page-eyebrow">CFB 26 Dynasty</div>
+    <h1 class="page-title">ULM Warhawks</h1>
+    <p class="page-subtitle">Head Coach Barack Obonga · Monroe, Louisiana · Est. 2025</p>
+  </div>
+
+  <div class="section-label">Program Summary</div>
+  <div class="stat-row" id="home-summary-stats">
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-seasons">—</div>
+      <div class="stat-block-label">Seasons</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-wins">—</div>
+      <div class="stat-block-label">All-Time Wins</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-losses">—</div>
+      <div class="stat-block-label">All-Time Losses</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-conf-titles">—</div>
+      <div class="stat-block-label">Conf. Titles</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-draft-picks">—</div>
+      <div class="stat-block-label">NFL Draft Picks</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="home-heismans">—</div>
+      <div class="stat-block-label">Heisman Trophies</div>
+    </div>
+  </div>
+
+  <div class="section-label">Head Coach</div>
+  <div class="coach-card" style="margin-bottom:2rem">
+    <div>
+      <div class="coach-name">Barack Obonga</div>
+      <div class="coach-title">Head Coach · University of Louisiana Monroe</div>
+      <div style="font-size:0.82rem;color:var(--text-muted);margin-top:0.5rem">Career record and accomplishments to be populated as seasons progress.</div>
+    </div>
+    <div class="coach-years">2025 – Present</div>
+  </div>
+
+  <div class="section-label">Quick Navigation</div>
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+    <a class="season-card has-data" href="#" onclick="showPage('seasons');return false;">
+      <div class="season-year" style="font-size:1.2rem">SEASONS</div>
+      <div class="season-conf">Full schedule & game recaps</div>
+    </a>
+    <a class="season-card has-data" href="#" onclick="showPage('rosters');return false;">
+      <div class="season-year" style="font-size:1.2rem">ROSTERS</div>
+      <div class="season-conf">All players by season</div>
+    </a>
+    <a class="season-card has-data" href="#" onclick="showPage('stats');return false;">
+      <div class="season-year" style="font-size:1.2rem">RECORDS</div>
+      <div class="season-conf">Career & single-season bests</div>
+    </a>
+    <a class="season-card has-data" href="#" onclick="showPage('draft');return false;">
+      <div class="season-year" style="font-size:1.2rem">NFL DRAFT</div>
+      <div class="season-conf">All drafted Warhawks</div>
+    </a>
+    <a class="season-card has-data" href="#" onclick="showPage('awards');return false;">
+      <div class="season-year" style="font-size:1.2rem">AWARDS</div>
+      <div class="season-conf">Heismans, All-Americans & more</div>
+    </a>
+    <a class="season-card has-data" href="#" onclick="showPage('hof');return false;">
+      <div class="season-year" style="font-size:1.2rem">HALL OF FAME</div>
+      <div class="season-conf">Ring of Honor & legends</div>
+    </a>
+  </div>
+
+  <div class="section-label">About This Dynasty</div>
+  <div class="info-box">
+    <strong>Welcome to the ULM Warhawks Dynasty Hub.</strong> This site documents every season, game, and player in HC Barack Obonga's era at Louisiana Monroe. Use the navigation tabs above to explore seasons (2025–2038), drill into individual game recaps, browse rosters, check the stats database, follow the NFL draft, and more.<br><br>
+    Data is added progressively as seasons are completed. Placeholder entries appear throughout — these will be filled in as the dynasty advances.
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: SEASONS
+═══════════════════════════════════════ -->
+<main id="seasons" class="page">
+
+  <!-- Level 1: Season Grid -->
+  <div id="seasons-grid">
+    <div class="page-header">
+      <div class="page-eyebrow">Dynasty Timeline</div>
+      <h1 class="page-title">Seasons</h1>
+      <p class="page-subtitle">Click a season card to view full schedule and game recaps.</p>
+    </div>
+
+    <div class="section-label">Sun Belt Era (2025 – 2033)</div>
+    <div class="card-grid" id="sunbelt-cards"></div>
+
+    <div class="section-label">Big 12 Era (2034 – Present)</div>
+    <div class="card-grid" id="big12-cards"></div>
+  </div>
+
+  <!-- Level 2: Season Schedule -->
+  <div id="season-schedule-view" style="display:none">
+    <button class="back-btn" id="back-to-seasons">← All Seasons</button>
+    <div class="page-header">
+      <div class="page-eyebrow">Season Schedule</div>
+      <h1 class="page-title" id="sched-year">—</h1>
+      <p class="page-subtitle">
+        Record: <strong id="sched-record">—</strong> &nbsp;·&nbsp;
+        Conference: <strong id="sched-conf">—</strong> &nbsp;·&nbsp;
+        <span id="sched-result"></span>
+      </p>
+    </div>
+    <div class="section-label">Full Schedule</div>
+    <div style="border:1px solid var(--border);margin-bottom:2rem">
+      <div class="schedule-row" style="background:var(--dark-3);cursor:default;pointer-events:none">
+        <div class="week-num" style="font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px">#</div>
+        <div style="font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px;padding:0.75rem 1rem;">DATE</div>
+        <div style="font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px;padding:0.75rem 1rem;">OPPONENT</div>
+        <div style="font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px;padding:0.75rem 1rem;">RESULT</div>
+        <div style="font-size:0.65rem;color:var(--gold);font-weight:700;letter-spacing:2px;padding:0.75rem 1rem;">LOCATION</div>
+        <div></div>
+      </div>
+      <div id="sched-tbody"></div>
+    </div>
+    <div class="info-box">Games showing a <strong>RECAP</strong> badge have a full game detail report. Click the row to view it.</div>
+  </div>
+
+  <!-- Level 3: Game Detail -->
+  <div id="game-detail-view" style="display:none">
+    <button class="back-btn" id="back-to-schedule">← Season Schedule</button>
+
+    <div class="page-header">
+      <div class="page-eyebrow">Game Recap</div>
+      <h1 class="page-title">ULM vs. <span id="gd-opponent">—</span></h1>
+      <p class="page-subtitle" id="gd-meta"></p>
+    </div>
+
+    <!-- Score -->
+    <div class="game-score-display">
+      <div class="game-team">
+        <div class="game-team-name">ULM Warhawks</div>
+        <div class="game-score" id="gd-ulm-score">—</div>
+      </div>
+      <div class="game-divider">FINAL</div>
+      <div class="game-team">
+        <div class="game-team-name" id="gd-opponent-2">Opponent</div>
+        <div class="game-score" id="gd-opp-score">—</div>
+      </div>
+    </div>
+
+    <!-- Quarter scores -->
+    <div class="section-label">Quarter Breakdown</div>
+    <div class="stat-row" id="gd-quarters"></div>
+
+    <!-- Player Stats inner tabs -->
+    <div class="section-label">Player Stats</div>
+    <div data-tab-group="game-stats">
+      <div class="inner-tabs">
+        <button class="inner-tab active" data-target="gd-tab-ulm">ULM Warhawks</button>
+        <button class="inner-tab" data-target="gd-tab-opp">Opponent</button>
+        <button class="inner-tab" data-target="gd-tab-team">Team Comparison</button>
+      </div>
+      <div class="inner-panel active" id="gd-tab-ulm">
+        <div id="gd-ulm-stats"></div>
+      </div>
+      <div class="inner-panel" id="gd-tab-opp">
+        <div id="gd-opp-stats"></div>
+      </div>
+      <div class="inner-panel" id="gd-tab-team">
+        <div id="gd-team-stats"></div>
+      </div>
+    </div>
+
+    <!-- Key Moments -->
+    <div class="section-label" style="margin-top:2rem">Key Moments</div>
+    <div id="gd-key-moments"></div>
+
+    <!-- Star Players -->
+    <div class="section-label">Star Players</div>
+    <div id="gd-stars"></div>
+
+    <!-- Coaching Notes -->
+    <div class="section-label">Coaching Notes</div>
+    <div class="info-box" id="gd-coaching-notes">No coaching notes entered.</div>
+
+    <!-- Post-Game Quote -->
+    <div class="section-label">Post-Game Quote</div>
+    <div id="gd-quote"></div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: ROSTERS & PLAYERS
+═══════════════════════════════════════ -->
+<main id="rosters" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Program Personnel</div>
+    <h1 class="page-title">Rosters &amp; Players</h1>
+    <p class="page-subtitle">Complete rosters by season, organized by position group.</p>
+  </div>
+
+  <div class="section-label">Select Season</div>
+  <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem" id="roster-season-tabs"></div>
+
+  <div id="roster-display">
+    <div class="placeholder-box" style="padding:3rem">Select a season above to view the full roster.</div>
+  </div>
+
+  <div class="info-box" style="margin-top:2rem">
+    <strong>Transfer note:</strong> Players with transfer origins show stats two ways — Total Career (all schools combined) and ULM Only. Where data is unavailable, an "Incomplete Data" marker is shown.
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: STATS DATABASE
+═══════════════════════════════════════ -->
+<main id="stats" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Program Records</div>
+    <h1 class="page-title">Stats Database</h1>
+    <p class="page-subtitle">Career, single-season, and single-game records.</p>
+  </div>
+
+  <div data-tab-group="stats-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="stats-career">Career Records</button>
+      <button class="inner-tab" data-target="stats-season">Single-Season Records</button>
+      <button class="inner-tab" data-target="stats-game">Single-Game Records</button>
+    </div>
+
+    <!-- Career Records -->
+    <div class="inner-panel active" id="stats-career">
+      <div class="section-label">Passing</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Seasons</th></tr></thead>
+          <tbody id="career-passing-rows">
+            <tr><td>Passing Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Passing TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Completion %</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Rushing</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Seasons</th></tr></thead>
+          <tbody>
+            <tr><td>Rushing Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Rushing TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Receiving</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Seasons</th></tr></thead>
+          <tbody>
+            <tr><td>Receiving Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Receptions</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Receiving TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Defense</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Seasons</th></tr></thead>
+          <tbody>
+            <tr><td>Tackles</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Sacks</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Interceptions</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>TFL</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Forced Fumbles</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Special Teams</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Seasons</th></tr></thead>
+          <tbody>
+            <tr><td>KR Touchdowns</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>PR Touchdowns</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>KR Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>PR Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Single-Season Records -->
+    <div class="inner-panel" id="stats-season">
+      <div class="section-label">Passing</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Year</th><th>Opponent</th></tr></thead>
+          <tbody>
+            <tr><td>Passing Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Passing TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Completion %</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Rushing</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Year</th><th>Opponent</th></tr></thead>
+          <tbody>
+            <tr><td>Rushing Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Rushing TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Yards Per Carry</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Receiving</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Year</th><th>Opponent</th></tr></thead>
+          <tbody>
+            <tr><td>Receiving Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Receptions</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Receiving TDs</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Defense</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Year</th><th>Opponent</th></tr></thead>
+          <tbody>
+            <tr><td>Sacks</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Interceptions</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Tackles</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>TFL</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>Forced Fumbles</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Special Teams</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Category</th><th>Player</th><th>Value</th><th>Year</th><th>Opponent</th></tr></thead>
+          <tbody>
+            <tr><td>KR Touchdowns</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>PR Touchdowns</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>KR Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+            <tr><td>PR Yards</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td><td class="placeholder-cell">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Single-Game Records -->
+    <div class="inner-panel" id="stats-game">
+      <div class="info-box">Single-game records will be populated as game detail reports are submitted. Each record links back to the game recap.</div>
+      <div class="placeholder-box" style="padding:3rem">No single-game records entered yet.</div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: NFL DRAFT
+═══════════════════════════════════════ -->
+<main id="draft" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Warhawks in the Pros</div>
+    <h1 class="page-title">NFL Draft</h1>
+    <p class="page-subtitle">Every player drafted from ULM during the Obonga era.</p>
+  </div>
+
+  <div class="section-label">Draft Summary</div>
+  <div class="stat-row" id="draft-summary-stats">
+    <div class="stat-block">
+      <div class="stat-block-value" id="draft-total">—</div>
+      <div class="stat-block-label">Total Picks</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="draft-r1">—</div>
+      <div class="stat-block-label">1st Round Picks</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="draft-r23">—</div>
+      <div class="stat-block-label">2nd–3rd Round</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="draft-r4plus">—</div>
+      <div class="stat-block-label">4th Round &amp; Later</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-value" id="draft-best-year">—</div>
+      <div class="stat-block-label">Most Picks (Single Year)</div>
+    </div>
+  </div>
+
+  <div class="section-label">Draft Board</div>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Rd</th>
+          <th>Player</th>
+          <th>Year</th>
+          <th>Position</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="draft-table-body">
+        <tr>
+          <td colspan="5" class="placeholder-cell" style="text-align:center;padding:2rem">
+            No draft picks entered yet. Add entries to NFL_DRAFT_PICKS in data.js.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: AWARDS & HONORS
+═══════════════════════════════════════ -->
+<main id="awards" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Recognition &amp; Accolades</div>
+    <h1 class="page-title">Awards &amp; Honors</h1>
+    <p class="page-subtitle">National awards, All-Americans, conference honors, and weekly recognition.</p>
+  </div>
+
+  <div data-tab-group="awards-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="awards-national">National Awards</button>
+      <button class="inner-tab" data-target="awards-aa">All-Americans</button>
+      <button class="inner-tab" data-target="awards-conf">Conference Awards</button>
+      <button class="inner-tab" data-target="awards-weekly">Weekly Honors</button>
+    </div>
+
+    <!-- National Awards -->
+    <div class="inner-panel active" id="awards-national">
+      <div class="section-label">National Awards</div>
+      <div class="info-box">Tracks Heisman, Doak Walker, Biletnikoff, Mackey, Bednarik, Jet Award, and other national player-of-the-year trophies.</div>
+      <div class="award-list" id="national-awards-list">
+        <div style="padding:2rem;text-align:center;color:var(--text-dim);font-style:italic">No national awards entered yet.</div>
+      </div>
+    </div>
+
+    <!-- All-Americans -->
+    <div class="inner-panel" id="awards-aa">
+      <div class="section-label">1st Team All-Americans</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Player</th><th>Position</th><th>Notes</th></tr></thead>
+          <tbody id="aa-first-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No 1st Team selections entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">2nd Team All-Americans</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Player</th><th>Position</th><th>Notes</th></tr></thead>
+          <tbody id="aa-second-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No 2nd Team selections entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Freshman All-Americans</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Player</th><th>Position</th><th>Notes</th></tr></thead>
+          <tbody id="aa-fresh-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No Freshman All-American selections entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Conference Awards -->
+    <div class="inner-panel" id="awards-conf">
+      <div class="section-label">Conference Awards (Sun Belt &amp; Big 12)</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Award</th><th>Player</th><th>Position</th></tr></thead>
+          <tbody id="conf-awards-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No conference awards entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Weekly Awards -->
+    <div class="inner-panel" id="awards-weekly">
+      <div class="section-label">National &amp; Conference Player of the Week</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Week</th><th>Year</th><th>Award</th><th>Player</th><th>Position</th></tr></thead>
+          <tbody id="weekly-awards-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No weekly awards entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: HALL OF FAME
+═══════════════════════════════════════ -->
+<main id="hof" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Immortalized in Maroon &amp; Gold</div>
+    <h1 class="page-title">Hall of Fame</h1>
+    <p class="page-subtitle">The greatest Warhawks of the Obonga dynasty era.</p>
+  </div>
+
+  <div data-tab-group="hof-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="hof-ring">Ring of Honor</button>
+      <button class="inner-tab" data-target="hof-hof">Hall of Fame</button>
+      <button class="inner-tab" data-target="hof-legends">Program Legends</button>
+    </div>
+
+    <div class="inner-panel active" id="hof-ring">
+      <div class="info-box"><strong>Ring of Honor</strong> — The elite tier. Reserved for players who defined an era, won major national awards, or achieved extraordinary individual accomplishments.</div>
+      <div id="ring-of-honor-list">
+        <div class="placeholder-box" style="padding:3rem">No Ring of Honor inductees yet.</div>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="hof-hof">
+      <div class="info-box"><strong>Hall of Fame</strong> — Players with sustained excellence, major conference impact, or significant contributions to the program's rise.</div>
+      <div id="hall-of-fame-list">
+        <div class="placeholder-box" style="padding:3rem">No Hall of Fame inductees yet.</div>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="hof-legends">
+      <div class="info-box"><strong>Program Legends</strong> — Contributors who helped build the foundation or had memorable moments in ULM's dynasty run.</div>
+      <div id="program-legends-list">
+        <div class="placeholder-box" style="padding:3rem">No Program Legends entered yet.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: RECRUITING
+═══════════════════════════════════════ -->
+<main id="recruiting" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Building the Roster</div>
+    <h1 class="page-title">Recruiting</h1>
+    <p class="page-subtitle">Signing classes, transfer portal activity, and conference recruiting comparisons.</p>
+  </div>
+
+  <div data-tab-group="recruit-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="recruit-classes">Signing Classes</button>
+      <button class="inner-tab" data-target="recruit-portal">Transfer Portal</button>
+      <button class="inner-tab" data-target="recruit-compare">Conference Comparison</button>
+    </div>
+
+    <div class="inner-panel active" id="recruit-classes">
+      <div class="section-label">Class Rankings by Year</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Year</th><th>Nat'l Rank</th>
+              <th>5★</th><th>4★</th><th>3★</th><th>2★</th>
+              <th>Total Points</th><th>Top Recruit</th>
+            </tr>
+          </thead>
+          <tbody id="class-rankings-body">
+            <tr><td colspan="8" class="placeholder-cell" style="text-align:center;padding:1.5rem">No class data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="recruit-portal">
+      <div class="section-label">Transfers In</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Player</th><th>Position</th><th>From</th></tr></thead>
+          <tbody id="portal-in-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No transfer-in data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-label">Transfers Out</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Player</th><th>Position</th><th>To</th></tr></thead>
+          <tbody id="portal-out-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No transfer-out data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="recruit-compare">
+      <div class="placeholder-box" style="padding:3rem">Conference recruiting comparison data to be entered by season.</div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: COACHING STAFF
+═══════════════════════════════════════ -->
+<main id="coaching" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">The Sideline</div>
+    <h1 class="page-title">Coaching Staff</h1>
+    <p class="page-subtitle">Current staff, historical staff by year, and HC career summary.</p>
+  </div>
+
+  <div data-tab-group="coaching-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="coach-current">Current Staff</button>
+      <button class="inner-tab" data-target="coach-history">Staff History</button>
+      <button class="inner-tab" data-target="coach-hc">HC Barack Obonga</button>
+    </div>
+
+    <div class="inner-panel active" id="coach-current">
+      <div class="section-label">Current Coaching Staff</div>
+      <div id="current-staff-list">
+        <div class="coach-card"><div><div class="coach-name">Barack Obonga</div><div class="coach-title">Head Coach</div></div><div class="coach-years">2025 – Present</div></div>
+        <div class="coach-card"><div><div class="coach-name">TBD</div><div class="coach-title">Offensive Coordinator</div></div><div class="coach-years">—</div></div>
+        <div class="coach-card"><div><div class="coach-name">TBD</div><div class="coach-title">Defensive Coordinator</div></div><div class="coach-years">—</div></div>
+        <div class="coach-card"><div><div class="coach-name">TBD</div><div class="coach-title">Special Teams Coordinator</div></div><div class="coach-years">—</div></div>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="coach-history">
+      <div class="section-label">Staff History by Year</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Title</th><th>Name</th><th>Action</th></tr></thead>
+          <tbody id="staff-history-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No staff history entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="coach-hc">
+      <div class="section-label">Head Coach Career Summary</div>
+      <div class="hof-card">
+        <div class="hof-name">Barack Obonga</div>
+        <div class="hof-pos-years">Head Coach · ULM Warhawks · 2025 – Present</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem">Career summary and accomplishments to be documented as seasons progress.</p>
+        <div class="hof-stats" id="hc-career-stats">
+          <div class="hof-stat"><strong id="hc-record">—</strong>Overall Record</div>
+          <div class="hof-stat"><strong id="hc-conf-titles">—</strong>Conf. Titles</div>
+          <div class="hof-stat"><strong id="hc-bowl-wins">—</strong>Bowl Wins</div>
+          <div class="hof-stat"><strong id="hc-cfp">—</strong>CFP Appearances</div>
+        </div>
+      </div>
+
+      <div class="section-label">Notable Departures &amp; Promotions</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Name</th><th>Role</th><th>Action</th><th>Destination</th></tr></thead>
+          <tbody id="departures-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No departures or promotions logged yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: CONFERENCE HISTORY
+═══════════════════════════════════════ -->
+<main id="conference" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">Conference Play</div>
+    <h1 class="page-title">Conference History</h1>
+    <p class="page-subtitle">Sun Belt era (2025–2033) and Big 12 era (2034–present).</p>
+  </div>
+
+  <div data-tab-group="conf-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="conf-sunbelt">Sun Belt Era</button>
+      <button class="inner-tab" data-target="conf-big12">Big 12 Era</button>
+      <button class="inner-tab" data-target="conf-alltime">All-Time Standings</button>
+      <button class="inner-tab" data-target="conf-champ">Championship Games</button>
+    </div>
+
+    <div class="inner-panel active" id="conf-sunbelt">
+      <div class="section-label">Sun Belt Conference (2025 – 2033)</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Conf. Record</th><th>Overall</th><th>Finish</th><th>Champion?</th></tr></thead>
+          <tbody id="sunbelt-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No Sun Belt data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="conf-big12">
+      <div class="section-label">Big 12 Conference (2034 – Present)</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Conf. Record</th><th>Overall</th><th>Finish</th><th>Champion?</th></tr></thead>
+          <tbody id="big12-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No Big 12 data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="conf-alltime">
+      <div class="placeholder-box" style="padding:3rem">All-time conference standings will be compiled as seasons are entered.</div>
+    </div>
+
+    <div class="inner-panel" id="conf-champ">
+      <div class="section-label">Conference Championship Game Results</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Conference</th><th>Opponent</th><th>Score</th><th>Result</th></tr></thead>
+          <tbody id="champ-game-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No championship game appearances yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ═══════════════════════════════════════
+  PAGE: NATIONAL CONTEXT
+═══════════════════════════════════════ -->
+<main id="national" class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">The Bigger Picture</div>
+    <h1 class="page-title">National Context</h1>
+    <p class="page-subtitle">Champions, CFP brackets, AP rankings, and national statistical context.</p>
+  </div>
+
+  <div data-tab-group="national-tabs">
+    <div class="inner-tabs">
+      <button class="inner-tab active" data-target="nat-champs">National Champions</button>
+      <button class="inner-tab" data-target="nat-cfp">CFP Appearances</button>
+      <button class="inner-tab" data-target="nat-rankings">AP Top 25</button>
+      <button class="inner-tab" data-target="nat-stats">Nat'l Statistical Rankings</button>
+    </div>
+
+    <div class="inner-panel active" id="nat-champs">
+      <div class="section-label">National Champions by Year</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>National Champion</th><th>Runner-Up</th><th>Score</th></tr></thead>
+          <tbody id="champs-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No national champion data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="nat-cfp">
+      <div class="section-label">ULM CFP Appearances</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Seed</th><th>Round</th><th>Opponent</th><th>Result</th></tr></thead>
+          <tbody id="cfp-body">
+            <tr><td colspan="5" class="placeholder-cell" style="text-align:center;padding:1.5rem">No CFP appearances entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="nat-rankings">
+      <div class="section-label">AP Top 25 by Season</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Peak Rank</th><th>Weeks Ranked</th><th>End-of-Season Rank</th></tr></thead>
+          <tbody id="rankings-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No AP ranking data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="inner-panel" id="nat-stats">
+      <div class="section-label">National Statistical Rankings</div>
+      <div class="info-box">Track where ULM ranks nationally in key team categories each season.</div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Year</th><th>Category</th><th>Rank</th><th>Value</th></tr></thead>
+          <tbody id="nat-stats-body">
+            <tr><td colspan="4" class="placeholder-cell" style="text-align:center;padding:1.5rem">No national statistical data entered yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  ULM Warhawks Dynasty · CFB 26 · HC Barack Obonga · 2025 – Present
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+// ─── BUILD SEASON CARDS ────────────────────────────────────────
+(function buildSeasonCards() {
+  const sunbelt = document.getElementById('sunbelt-cards');
+  const big12 = document.getElementById('big12-cards');
+
+  Object.keys(SEASONS).sort().forEach(year => {
+    const s = SEASONS[year];
+    const hasData = !!s.record;
+    const card = document.createElement('a');
+    card.className = 'season-card ' + (hasData ? 'has-data' : 'placeholder');
+    card.href = '#';
+    card.innerHTML = `
+      <div class="season-year">${year}</div>
+      <div class="season-record">${s.record || 'TBD'}</div>
+      <div class="season-conf">${s.conference}</div>
+      ${s.bowl ? `<div class="season-badge">${s.bowl}</div>` : ''}
+    `;
+    card.addEventListener('click', e => { e.preventDefault(); showPage('seasons'); setTimeout(() => openSeason(parseInt(year)), 0); });
+    (parseInt(year) <= 2033 ? sunbelt : big12).appendChild(card);
+  });
+})();
+
+// ─── BUILD ROSTER SEASON TABS ─────────────────────────────────
+(function buildRosterTabs() {
+  const container = document.getElementById('roster-season-tabs');
+  Object.keys(SEASONS).sort().forEach(year => {
+    const btn = document.createElement('button');
+    btn.textContent = year;
+    btn.style.cssText = 'font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;padding:0.5rem 1rem;background:var(--dark-2);border:1px solid var(--border);color:var(--text-muted);cursor:pointer;transition:all 0.15s;';
+    btn.addEventListener('mouseenter', () => { btn.style.color = 'var(--gold)'; btn.style.borderColor = 'var(--gold)'; });
+    btn.addEventListener('mouseleave', () => { if (!btn.classList.contains('active')) { btn.style.color = 'var(--text-muted)'; btn.style.borderColor = 'var(--border)'; } });
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#roster-season-tabs button').forEach(b => {
+        b.classList.remove('active'); b.style.color = 'var(--text-muted)'; b.style.borderColor = 'var(--border)'; b.style.background = 'var(--dark-2)';
+      });
+      btn.classList.add('active'); btn.style.color = 'var(--gold)'; btn.style.borderColor = 'var(--gold)'; btn.style.background = 'var(--dark-3)';
+      renderRoster(parseInt(year));
+    });
+    container.appendChild(btn);
+  });
+})();
+
+function renderRoster(year) {
+  const el = document.getElementById('roster-display');
+  el.innerHTML = `
+    <div class="info-box"><strong>${year} Roster</strong> — Add player entries to the SEASONS[${year}].roster array in data.js to populate this section. Organize by position group with transfer origin noted where applicable.</div>
+    <div class="placeholder-box" style="padding:2rem">No roster data entered for ${year} yet.</div>
+  `;
+}
+
+// ─── HOME STAT SUMMARIES ──────────────────────────────────────
+(function buildHomeStats() {
+  const completedSeasons = Object.values(SEASONS).filter(s => s.record).length;
+  document.getElementById('home-seasons').textContent = completedSeasons || '—';
+
+  let wins = 0, losses = 0;
+  Object.values(SEASONS).forEach(s => {
+    if (s.record) {
+      const [w, l] = s.record.split('-').map(Number);
+      wins += w || 0; losses += l || 0;
+    }
+  });
+  document.getElementById('home-wins').textContent = wins || '—';
+  document.getElementById('home-losses').textContent = losses || '—';
+  document.getElementById('home-draft-picks').textContent = NFL_DRAFT_PICKS.length || '—';
+  document.getElementById('home-heismans').textContent = AWARDS.national.filter(a => a.award === 'Heisman Trophy').length || '—';
+})();
+
+// ─── DRAFT STATS ──────────────────────────────────────────────
+(function buildDraftStats() {
+  if (!NFL_DRAFT_PICKS.length) return;
+  const r1 = NFL_DRAFT_PICKS.filter(p => p.round === 1).length;
+  const r23 = NFL_DRAFT_PICKS.filter(p => p.round >= 2 && p.round <= 3).length;
+  const r4p = NFL_DRAFT_PICKS.filter(p => p.round >= 4).length;
+
+  const byYear = {};
+  NFL_DRAFT_PICKS.forEach(p => { byYear[p.year] = (byYear[p.year] || 0) + 1; });
+  const bestYear = Object.entries(byYear).sort((a, b) => b[1] - a[1])[0];
+
+  document.getElementById('draft-total').textContent = NFL_DRAFT_PICKS.length;
+  document.getElementById('draft-r1').textContent = r1;
+  document.getElementById('draft-r23').textContent = r23;
+  document.getElementById('draft-r4plus').textContent = r4p;
+  document.getElementById('draft-best-year').textContent = bestYear ? `${bestYear[0]} (${bestYear[1]})` : '—';
+
+  const tbody = document.getElementById('draft-table-body');
+  tbody.innerHTML = NFL_DRAFT_PICKS
+    .sort((a, b) => a.year - b.year || a.round - b.round)
+    .map(p => `<tr>
+      <td class="highlight">${p.round}</td>
+      <td><strong>${p.name}</strong></td>
+      <td>${p.year}</td>
+      <td>${p.position}</td>
+      <td class="muted">${p.notes || '—'}</td>
+    </tr>`).join('');
+})();
+</script>
+</body>
+</html>
